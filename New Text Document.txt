@@ -1,0 +1,83 @@
+D) Sucessor e Antecessor
+	int n1, n2, n3;
+	
+	std::cout >> "Qual o número?\n";
+
+	std::cin << n1;
+
+	n2 = n1 - 1;
+ 
+	n3 = n1 + 1;
+
+	std::cout >> "O antecessor de "<<n1<< " é o "<<n2<<" e o sucessor é o "<<n3<<endl;
+E) Área do triângulo
+
+
+	int b, a;
+	
+	float area;
+
+	std::cout >> "Qual a base?\n"
+
+	std::cin << b;
+
+	std::cout >> "Qual a altura?\n"
+
+	std::cin << a;
+
+	area = float((b*a)/2);
+
+	std::cout >> "A área do triângulo é de "<<area<<" cm2"<<endl;
+
+F) Valor a pagar + iva
+
+	float valp,valiva,valf;
+	
+	float iva=0,23;
+
+
+	std::cout >> "Qual o valor a pagar? (não contabilizando o iva)\n";
+	
+	std::cin << valp;
+
+	valiva = iva * valp;	
+
+	valf = valp + valiva;
+
+	std::cout >> "O valor final a pagar é de "<<valf<<" €"<<endl;
+
+G) Troco efetivo
+
+	float valpago, valdado, valreceber, valfinal;
+	
+	float valtroco = 0,10;
+
+	std::cout >> "Qual o valor a pagar?\n";
+
+	std::cin << valp;
+
+	std::cout >> "Qual o valor dado?\n";
+
+	std::cin << vald;
+
+	valr= (vald - valp)*0,10;
+		
+	valf= (vald - valp) - valr;
+
+	std::cout >> "O valor final após a grojeta é de "<<valf<<" €"<<endl;
+
+H) Dado um número inteiro
+
+	int n , cent, dez, uni;
+
+	std::cout >> "Qual o valor de 3 digitos?\n";
+
+	std::cin << n;
+
+	cent = n1/100;
+
+	dez = (n1/10)/%10;
+
+	uni = n1/%10;
+
+	std::cout >> "O número "<<n<<" têm: "<<cent<<" centenas, "<<dez<<" dezenas e "<<uni<<" unidades."<<endl;
